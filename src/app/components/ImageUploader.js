@@ -66,7 +66,7 @@ export const ImageUploader = () => {
   ) : (
     <div
       className={`flex flex-col justify-center items-center bg-white h-[500px] w-[400px] text-black p-4 rounded-md ${
-        dragActive && 'bg-slate-500'
+        dragActive && 'bg-slate-100'
       }`}
     >
       <h1 className='text-2xl py-3'>Upload your image</h1>
