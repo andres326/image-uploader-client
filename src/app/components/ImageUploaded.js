@@ -1,6 +1,5 @@
 import React from 'react';
 import { Clipboard } from './Clipboard';
-import Image from 'next/image';
 
 export const ImageUploaded = ({ image }) => {
   const [copied, setCopied] = React.useState(false);
@@ -14,13 +13,9 @@ export const ImageUploaded = ({ image }) => {
   return (
     <div className='flex flex-col justify-between items-center bg-white h-[400px] w-[400px] text-black p-4 rounded-md'>
       <h1 className='text-2xl'>Uploaded succesfully!</h1>
-      <Image
+      <img
         src={linkImage}
-        alt='default image'
         className='object-cover rounded border h-48 w-full'
-        width={100}
-        height={88}
-        priority
       />
       <div className='flex flex-row justify-between bg-gray-200 w-full rounded-md'>
         <input
