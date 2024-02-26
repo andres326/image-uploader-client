@@ -88,13 +88,10 @@ export const ImageUploader = () => {
           onChange={handleChange}
         />
         <div className='flex flex-col items-center justify-evenly h-52 w-full border-2 border-dashed rounded-lg text-black/40 mb-3'>
-          <Image
+          <img
             src='/default-image.png'
             alt='DefaultImage'
-            className='text-black/40'
-            width={100}
-            height={24}
-            priority
+            className='text-black/40 h-[80px] w-[100px]'
           />
           <span>Drag and drop your image here</span>
         </div>
